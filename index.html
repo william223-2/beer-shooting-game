@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <title>管道射击挑战</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="game" aria-label="管道射击游戏"></canvas>
+    <section class="hud" aria-live="polite">
+      <div class="ammo"><span class="bullet-icon">▮</span><span id="ammo">5</span></div>
+      <div class="score" id="score">等待时机</div>
+    </section>
+    <button class="trigger" id="trigger" type="button">扣下扳机</button>
+    <section class="overlay hidden" id="overlay">
+      <h1 id="result-title">挑战成功</h1>
+      <p id="result-copy">全部目标已清除</p>
+      <button id="restart" type="button">再来一局</button>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
