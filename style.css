@@ -7,12 +7,16 @@ canvas { display: block; width: 100%; height: 100%; touch-action: none; }
 .hud { position: absolute; inset: 0 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; pointer-events: none; text-shadow: 0 2px 3px #000; }
 .ammo { display: flex; align-items: center; gap: 9px; font: 700 28px Georgia, serif; }
 .bullet-icon { display: inline-block; color: #f2a32b; transform: rotate(180deg); font-size: 35px; line-height: .6; }
-.score { color: #fff; font-size: 15px; font-weight: 700; }
-.trigger { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); width: 118px; min-height: 38px; border: 1px solid #fff9; border-radius: 20px; color: #fff; background: #e0a91e; font-weight: 700; cursor: pointer; box-shadow: inset 0 1px #fff8, 0 3px 8px #0008; }
+.stats { display: flex; align-items: baseline; gap: 4px; color: #fff; font-size: 24px; font-weight: 800; }
+.stats small { font-size: 12px; }
+.combo { margin-left: 8px; color: #ffd52d; font-size: 12px; }
+.timer { color: #fff; font-size: 17px; font-weight: 800; }
+.trigger { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); width: 118px; min-height: 42px; border: 1px solid #fff9; border-radius: 20px; color: #fff; background: #e0a91e; font-weight: 700; cursor: pointer; box-shadow: inset 0 1px #fff8, 0 3px 8px #0008; }
 .trigger:active { transform: translateX(-50%) translateY(2px); background: #c58c11; }
 .overlay { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 12px; background: #101820b8; text-align: center; }
 .overlay.hidden { display: none; }
 .overlay h1 { margin: 0; color: #ffd51c; font-size: 38px; text-shadow: 0 3px #7a4b00; }
-.overlay p { margin: 0 0 10px; color: #fff; }
+.overlay p { margin: 0; color: #fff; }
+.final-score { color: #ffd21d; font-size: 30px; font-weight: 800; }
 .overlay button { border: 0; border-radius: 22px; padding: 11px 24px; color: #332400; background: #ffd21d; font-weight: 700; cursor: pointer; }
 @media (min-width: 700px) { .game-shell { height: min(92vh, 820px); } }
