@@ -3,20 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-  <title>管道射击挑战</title>
+  <title>酒吧清场：精准射击</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="game-shell">
-    <canvas id="game" aria-label="管道射击游戏"></canvas>
+    <canvas id="game" aria-label="酒吧清场精准射击游戏"></canvas>
     <section class="hud" aria-live="polite">
-      <div class="ammo"><span class="bullet-icon">▮</span><span id="ammo">5</span></div>
-      <div class="score" id="score">等待时机</div>
+      <div class="ammo"><span class="bullet-icon">▮</span><span id="ammo">12</span></div>
+      <div class="stats"><span id="score">0</span><small>分</small><span class="combo" id="combo">连击 x1</span></div>
+      <div class="timer" id="timer">30.0s</div>
     </section>
-    <button class="trigger" id="trigger" type="button">扣下扳机</button>
+    <button class="trigger" id="trigger" type="button">开火</button>
     <section class="overlay hidden" id="overlay">
-      <h1 id="result-title">挑战成功</h1>
-      <p id="result-copy">全部目标已清除</p>
+      <h1 id="result-title">酒吧清场</h1>
+      <p id="result-copy">准备好了吗？</p>
+      <div class="final-score" id="final-score">0 分</div>
       <button id="restart" type="button">再来一局</button>
     </section>
   </main>
